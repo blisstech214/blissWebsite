@@ -1,4 +1,3 @@
-
 import React from "react";
 import LogoB from "../../../assets/title-icon.png";
 
@@ -9,9 +8,9 @@ const Description = "Get in touch, send an e-mail or call us";
 
 function Contact() {
   return (
-    <div className="mt-20 md:mt-52 px-6 md:px-20 lg:px-44">
+    <div className="px-6 md:px-20 lg:px-44 space-y-20">
       <div className="text-left mb-8 space-y-8 md:space-y-14">
-        <h1 className="text-4xl md:text-6xl lg:text-7xl mb-4">Contact</h1>
+        <h1 className="text-2xl md:text-4xl lg:text-5xl mb-4">Contact</h1>
         <h2 className="text-lg md:text-xl font-semibold text-gray-600">
           Get In Touch with Us
         </h2>
@@ -57,8 +56,8 @@ function Contact() {
           </form>
         </div>
 
-        <div className="md:mt-0 -mt-10">
-          <div className="text-black p-6 md:p-10 space-y-6 md:space-y-10">
+        <div className="md:-mt-28 mb-10">
+          <div className="text-black p-6 md:p-10 space-y-3 md:space-y-5">
             <img src={LogoB} className="animate-pulse w-14 mb-4" alt="Logo" />
             <h1 className="text-2xl md:text-4xl lg:text-5xl font-semibold py-4">
               {Description}

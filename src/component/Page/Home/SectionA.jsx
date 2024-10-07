@@ -15,8 +15,8 @@ function SectionA() {
       data-aos="fade-up"
       data-aos-duration="1000"
     >
-      <div className="p-5 overflow-hidden text-center md:text-left">
-        <section className="space-y-5">
+      <div className="p-5 overflow-hidden text-center  pt-20 md:text-left">
+        <section className="space-y-8">
           <h2
             className="text-sm md:text-xl lg:text-2xl font-medium text-colorA"
             data-aos="fade-up"

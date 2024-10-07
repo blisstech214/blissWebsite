@@ -21,7 +21,7 @@ function HomeMain() {
       <div className="mt-10">
         <SectionE />
       </div>
-      <div className="-mt-52">
+      <div className="mt-10">
         <Contact />
       </div>
       <div className="mt-10">

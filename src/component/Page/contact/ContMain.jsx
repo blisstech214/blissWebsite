@@ -4,7 +4,9 @@ import Contact from "./Contact";
 function ContMain() {
   return (
     <div className="contact">
-      <Contact />
+      <div className="pt-64">
+        <Contact />
+      </div>
     </div>
   );
 }

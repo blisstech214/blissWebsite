@@ -28,7 +28,7 @@ function SectionTwo() {
   ];
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4 md:p-8 lg:px-28">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4 md:p-8 lg:px-20">
       {cardData.map((card, index) => (
         <div key={index} className="px-2 md:px-4">
           <div
@@ -46,19 +46,19 @@ function SectionTwo() {
               <h5 className="mb-2 text-lg md:text-xl text-center font-bold text-gray-900">
                 {card.title}
               </h5>
-              <p className="text-gray-700 text-sm md:text-base text-justify mb-4">
+              <p className="text-gray-700 text-sm md:text-base px-10 text-justify mb-4">
                 {card.description}
               </p>
             </div>
 
-            <div className="flex items-center mt-4">
+            {/* <div className="flex items-center mt-4">
               <img
                 src={profilePhoto}
                 alt={card.name}
                 className="w-8 h-8 md:w-10 md:h-10 rounded-full mr-2"
               />
               <span className="text-gray-900 text-sm md:text-base">{card.name}</span>
-            </div>
+            </div> */}
           </div>
         </div>
       ))}

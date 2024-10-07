@@ -5,7 +5,9 @@ import SectionThree from "./SectionThree";
 function About() {
   return (
     <div className="contact">
-      <SectionOne />
+      <div className="pt-64">
+        <SectionOne />
+      </div>
       <SectionTwo />
       <SectionThree />
     </div>

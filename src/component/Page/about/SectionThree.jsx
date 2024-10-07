@@ -16,22 +16,22 @@ deserunt? Dicta modi veritatis hic natus aperiam doloremque architecto
 mollitia!`;
 
 const listData = [
-  { label: "Task A", percentage: 30 },
-  { label: "Task B", percentage: 60 },
-  { label: "Task C", percentage: 90 },
-  { label: "Task D", percentage: 70 },
-  { label: "Task E", percentage: 50 },
-  { label: "Task F", percentage: 100 },
+  { label: "Web Development", percentage: 30 },
+  { label: "Ecommerce Development", percentage: 60 },
+  { label: "Mobile App Development", percentage: 90 },
+  { label: "Digital Marketing Services", percentage: 70 },
+  { label: "Graphics Design & UI/UX", percentage: 50 },
+  // { label: "Hire Dedicated Developer", percentage: 100 },
 ];
 
 function SectionThree() {
   const [animatedPercentages, setAnimatedPercentages] = useState(
-    listData.map(() => 0) 
+    listData.map(() => 0)
   );
 
   useEffect(() => {
     const animatePercentages = () => {
-      const newPercentages = listData.map(item => item.percentage);
+      const newPercentages = listData.map((item) => item.percentage);
       newPercentages.forEach((target, index) => {
         let count = 0;
         const interval = setInterval(() => {
@@ -39,13 +39,13 @@ function SectionThree() {
             clearInterval(interval);
           } else {
             count += 1;
-            setAnimatedPercentages(prev => {
+            setAnimatedPercentages((prev) => {
               const newArr = [...prev];
               newArr[index] = count;
               return newArr;
             });
           }
-        }, 30); 
+        }, 30);
       });
     };
 
@@ -62,9 +62,7 @@ function SectionThree() {
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold py-2 md:py-4">
               {Company}
             </h1>
-            <p className="text-sm md:text-base text-gray-500">
-              {Description}
-            </p>
+            <p className="text-sm md:text-base text-gray-500">{Description}</p>
           </div>
         </div>
 

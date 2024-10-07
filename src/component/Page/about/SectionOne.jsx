@@ -16,16 +16,16 @@ mollitia!`;
 
 function SectionOne() {
   return (
-    <div className="mt-20 md:mt-52 px-4 md:px-12 lg:px-32">
-      <div className="text-left mb-8 space-y-8 md:space-y-14">
-        <h1 className="text-4xl md:text-6xl lg:text-7xl mb-4">About Us</h1>
+    <div className="px-4 md:px-12 lg:px-28">
+      <div className="text-left mb-8 px-6 space-y-8 md:space-y-14 ">
+        <h1 className="text-2xl md:text-4xl lg:text-5xl mb-4">About Us</h1>
         <h2 className="text-lg md:text-xl font-semibold text-gray-600">
           Get To Know Us
         </h2>
         <hr className="w-24 md:w-52 border-t-2 border-gray-300" />
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 ">
         <div className="flex items-center p-4 md:p-8">
           <div className="text-black space-y-4">
             <img src={LogoB} className="animate-pulse w-12 mb-4" alt="Logo" />

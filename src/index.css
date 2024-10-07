@@ -2,24 +2,62 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Home Section Styles */
 .home {
   background-image: url(./assets/a.png);
   background-repeat: no-repeat;
-  background-size: 100%;
+  /* background-size: cover; Cover entire section */
+  background-position: right top;
+  min-height: 100vh;
+  display: block;
+  background-size: contain;
+  flex-direction: column;
+}
+
+/* Contact Section Styles */
+.contact {
+  background-image: url(./assets/banner-bg.png);
+  background-repeat: no-repeat;
+  /* background-size: contain; */
   background-position: right top;
   min-height: 100vh;
   display: block;
   flex-direction: column;
 }
 
-.contact {
-  background-image: url(./assets/banner-bg.png);
-  background-repeat: no-repeat;
-  background-position: right top;
+/* Media queries for responsive design */
 
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+/* For tablets and iPads */
+@media (max-width: 1024px) {
+  .home {
+    background-size: contain; /* Adjust background size for tablets */
+    background-position: right top;
+  }
+
+  .contact {
+    background-size: 80%; /* Different size for contact on tablet */
+    background-position: center top;
+  }
+}
+
+/* For mobile and small screens */
+@media (max-width: 768px) {
+  .home,
+  .contact {
+    background-image: none; /* Hide the background images on mobile */
+  }
+}
+/* For tablets and iPads */
+@media (max-width: 1024px) {
+  .home {
+    background-size: contain; /* Adjust background size for tablets */
+    background-position: right top;
+  }
+
+  .contact {
+    background-size: 80%; /* Different size for contact on tablet */
+    background-position: right top;
+  }
 }
 
 @keyframes autoUpDown {
